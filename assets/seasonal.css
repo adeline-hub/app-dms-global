@@ -1,0 +1,367 @@
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 64px 48px;
+}
+
+.page-header {
+  margin-bottom: 56px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+
+.page-header h2 {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   SEASONAL SCORE
+========================================================= */
+
+.seasonal-score {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: 48px;
+}
+
+.seasonal-score::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0,0,0,0.15);
+}
+
+
+/* =========================================================
+   SEASON BLOCKS
+========================================================= */
+
+.season-block {
+  position: relative;
+  margin-bottom: 10px; /* Increase this value */
+}
+
+/* Target specific seasons for different spacing */
+.season-block:nth-child(1) { /* SUMMER */
+    margin-bottom: 10px;
+}
+
+.season-block:nth-child(2) { /* AUTUMN */
+    margin-bottom: 1px;
+}
+
+.season-block:nth-child(3) { /* WINTER */
+    margin-bottom: 50px;
+}
+
+.season-block:nth-child(4) { /* SPRING */
+    margin-bottom: 60px; /* Less space at the bottom */
+}
+
+
+/* subtle alternation but centered */
+.offset-0 { transform: translateX(20px); }
+.offset-1 { transform: translateX(-20px); }
+
+.season-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+
+.season-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* handwritten line */
+.season-line {
+  position: absolute;
+  top: 32px;
+  left: -8px;
+  right: 0;
+  height: 12px;
+  background: url("/assets/handline.svg") repeat-x;
+  opacity: 0.35;
+}
+
+
+/* =========================================================
+   ANNOTATIONS (LEFT, CLOSE)
+========================================================= */
+
+.season-annotation {
+  position: absolute;
+  top: 30px;
+  left: -160px;
+  max-width: 140px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.annotation-text {
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.annotation-arrow {
+  width: 60px;
+  height: 22px;
+  background: url("/assets/handarrow.svg") no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+}
+
+
+/* =========================================================
+   ACTIONS (UNDER THE LINE)
+========================================================= */
+
+.season-action {
+  margin-top: 12px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+/* inputs */
+.inline-input {
+  width: 140px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  background: transparent;
+  padding: 2px 4px;
+  font-family: inherit;
+}
+
+.inline-input:focus {
+  outline: none;
+  border-color: rgba(0,0,0,0.7);
+}
+
+/* OK + main buttons */
+
+.upload-area {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.inline-ok,
+.inline-button {
+  background: #777;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.inline-button:hover {
+    background: #666;
+}
+/* Optional: Add hover effect for upload area */
+.upload-area:hover .inline-button {
+    background: #666;
+}
+/* Style for when files are being dragged over */
+.upload-area.dragging {
+    border: 2px dashed #4a90e2;
+    padding: 8px;
+    border-radius: 4px;
+}
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.disclaimer {
+  margin-top: 72px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.page-footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.page-footer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================================================
+   BRAND LOGO
+========================================================= */
+
+.brand-logo {
+  height: 28px;          /* discreet, editorial */
+  opacity: 0.85;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+}
+
+/* Add to your existing seasonal.css */
+.status-message {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-left: 8px;
+    font-style: italic;
+}
+
+.winter-processing-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.processing-text {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* =========================================================
+   FIXED SPACING BETWEEN SEASON PAIRS
+========================================================= */
+
+/* Reset margin-bottom and use padding for consistent spacing */
+.season-block {
+    margin-bottom: 0; /* Remove default margin */
+    padding-bottom: 200px; /* Use padding for consistent spacing */
+    position: relative;
+}
+
+/* Adjust the vertical position of offset blocks */
+.offset-0 {
+    transform: translateX(20px);
+    margin-top: 0; /* Summer and Winter start at same position */
+}
+
+.offset-1 {
+    transform: translateX(200px);
+    margin-top: 80px; /* Autumn and Spring start BELOW their partners */
+}
+
+/* Remove extra padding from the last block */
+.season-block:last-child {
+    padding-bottom: 100px;
+}
+
+/* Ensure seasonal-score container has enough height */
+.seasonal-score {
+    min-height: 400px; /* Adjust based on your needs */
+}
+
+/* Adjust annotation position for offset-1 blocks */
+.offset-1 .season-annotation {
+    top: 110px; /* Move down to align with shifted block */
+}
+
+/* Adjust line position for offset-1 blocks */
+.offset-1 .season-line {
+    top: 62px; /* 32px + 30px offset */
+}
+
+
+/* =========================================================
+   WINTER ACTION STYLING
+========================================================= */
+
+.winter-action {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.processing-text {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Animation for processing text */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.processing-text {
+    animation: pulse 2s infinite;
+}
+
+/* Optional: Add a subtle background for winter block */
+.offset-0:nth-child(3) { /* Target the third season block (Winter) */
+    background-color: rgba(248, 249, 250, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* =========================================================
+   BUTTON STYLES
+========================================================= */
+/* =========================================================
+   WINTER & SPRING BUTTON STYLES
+========================================================= */
+
+.winter-btn {
+    background: #666 !important;  /* Blue for process */
+}
+
+.winter-btn:hover {
+    background: #666 !important;
+}
+
+.spring-btn {
+    background: #666 !important;  /* Green for output */
+}
+
+.spring-btn:hover {
+    background: #666 !important;
+}
+
+.spring-btn:disabled {
+    background: #cccccc !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Processing info styling */
+.processing-info {
+    font-style: italic;
+    color: #4a90e2;
+}
+
+.deck-info {
+    font-style: italic;
+    color: #50e3c2;
+}
+
+/* Status message animations */
+.status-message {
+    margin-top: 8px;
+    font-size: 11px;
+    min-height: 16px;
+    transition: opacity 0.3s;
+}

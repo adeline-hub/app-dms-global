@@ -1,0 +1,141 @@
+/* Season blocks with integrated actions */
+.seasonal-score {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.season-block {
+    width: 300px;
+    position: relative;
+}
+
+.season-label {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.season-title {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.season-line {
+    height: 3px;
+    background: linear-gradient(90deg, #4a90e2, #50e3c2);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+/* Season actions positioned under each block */
+.season-action {
+    margin-top: 10px;
+}
+
+.input-pair {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.season-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.season-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.season-submit-btn {
+    width: 40px;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.season-submit-btn:hover {
+    background-color: #357ae8;
+}
+
+.season-upload-btn, .season-download-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #50e3c2;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.season-upload-btn:hover {
+    background-color: #3bd1b0;
+}
+
+.season-download-btn {
+    background-color: #f5a623;
+    color: white;
+}
+
+.season-download-btn:hover {
+    background-color: #e6951c;
+}
+
+.season-status {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    min-height: 20px;
+}
+
+/* Winter processing */
+.winter-processing-container {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.processing-text {
+    font-size: 16px;
+    color: #666;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+/* Offsets for layout */
+.offset-0 {
+    margin-top: 0;
+}
+
+.offset-1 {
+    margin-top: 60px;
+}

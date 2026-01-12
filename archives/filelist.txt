@@ -1,0 +1,245 @@
+Folder PATH listing for volume OS
+Volume serial number is DEE1-F093
+C:\USERS\ADELINEPRUVOST\DOCUMENTS\RENDER\APP-DMS-GLOBAL-V2
+|   app.py
+|   callbacks.py
+|   filelist.txt
+|   layout.py
+|   map_project_dependencies.py
+|   pdf_export.py
+|   PROCESS.md
+|   project_structure.mmd
+|   README.md
+|   render.yaml
+|   requirements.txt
+|   seasonal.py
+|   setup_project.py
+|   simple_deck_generator.py
+|   
++---.llm_cache
+|       bb99b0c83849a099c38d89b5bca59d4b.json
+|       
++---app_dms_global
+|   |   .gitignore
+|   |   README.md
+|   |   render.yaml
+|   |   
+|   +---backend
+|   |   |   main.py
+|   |   |   __init__.py
+|   |   |   
+|   |   +---api
+|   |   |   |   projects.py
+|   |   |   |   templates.py
+|   |   |   |   uploads.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           projects.cpython-310.pyc
+|   |   |           templates.cpython-310.pyc
+|   |   |           uploads.cpython-310.pyc
+|   |   |           __init__.cpython-310.pyc
+|   |   |           
+|   |   +---models
+|   |   |   |   project.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           project.cpython-310.pyc
+|   |   |           __init__.cpython-310.pyc
+|   |   |           
+|   |   +---services
+|   |   |   |   pipeline_service.py
+|   |   |   |   project_service.py
+|   |   |   |   upload_service.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           pipeline_service.cpython-310.pyc
+|   |   |           project_service.cpython-310.pyc
+|   |   |           upload_service.cpython-310.pyc
+|   |   |           __init__.cpython-310.pyc
+|   |   |           
+|   |   \---__pycache__
+|   |           main.cpython-310.pyc
+|   |           __init__.cpython-310.pyc
+|   |           
+|   +---outputs
+|   |       business-food-chad-investor.pptx
+|   |       business-food-uganda-investor.pptx
+|   |       business-food-uganda-partner.pptx
+|   |       
+|   +---projects
+|   |   +---business-food-chad
+|   |   |   +---deck
+|   |   |   |       deck.md
+|   |   |   |       
+|   |   |   +---financial
+|   |   |   +---insights
+|   |   |   |       key_insights.md
+|   |   |   |       
+|   |   |   +---memo
+|   |   |   |       01_overview.md
+|   |   |   |       02_market.md
+|   |   |   |       03_regulation.md
+|   |   |   |       04_business_model.md
+|   |   |   |       05_risks.md
+|   |   |   |       
+|   |   |   +---raw_docs
+|   |   |   |       Agrosahas Business Plan.docx
+|   |   |   |       Business Plan Financial Model 28052023.xlsx
+|   |   |   |       Company profile.pdf
+|   |   |   |       
+|   |   |   \---standardized
+|   |   |       +---docs
+|   |   |       |       Agrosahas Business Plan.md
+|   |   |       |       Company profile.md
+|   |   |       |       
+|   |   |       \---knowledge
+|   |   |           +---case_studies
+|   |   |           \---regulatory_notes
+|   |   \---business-food-uganda
+|   |       +---deck
+|   |       |       deck.md
+|   |       |       
+|   |       +---insights
+|   |       +---memo
+|   |       +---raw_docs
+|   |       \---standardized
+|   |           +---docs
+|   |           \---knowledge
+|   |               +---case_studies
+|   |               \---regulatory_notes
+|   +---scripts
+|   |   |   deck_md_to_ppt.py
+|   |   |   extract_key_insights.py
+|   |   |   generate_business_deck.py
+|   |   |   generate_draft_memo_sections.py
+|   |   |   generate_structure_overview.py
+|   |   |   pipeline.py
+|   |   |   project_reasoning.py
+|   |   |   project_reasoning_rag.py
+|   |   |   standardize_documents.py
+|   |   |   __init__.py
+|   |   |   
+|   |   +---financial
+|   |   |   |   extract_financials.py
+|   |   |   |   generate_financial_charts.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           extract_financials.cpython-310.pyc
+|   |   |           generate_financial_charts.cpython-310.pyc
+|   |   |           
+|   |   +---rag
+|   |   |       build_index.py
+|   |   |       
+|   |   \---__pycache__
+|   |           deck_md_to_ppt.cpython-310.pyc
+|   |           extract_key_insights.cpython-310.pyc
+|   |           generate_business_deck.cpython-310.pyc
+|   |           generate_structure_overview.cpython-310.pyc
+|   |           pipeline.cpython-310.pyc
+|   |           project_reasoning.cpython-310.pyc
+|   |           standardize_documents.cpython-310.pyc
+|   |           __init__.cpython-310.pyc
+|   |           
+|   +---templates
+|   |       Brand_Template.pptx
+|   |       Financial_Model_Template.xlsx
+|   |       
+|   \---utils
+|       |   chunker.py
+|       |   llm.py
+|       |   rag.py
+|       |   __init__.py
+|       |   
+|       \---__pycache__
+|               chunker.cpython-310.pyc
+|               llm.cpython-310.pyc
+|               rag.cpython-310.pyc
+|               __init__.cpython-310.pyc
+|               
++---archives-files-v2
+|       app-dms-global-v2.svg
+|       build_code_schema.py
+|       call_graph.dot
+|       call_graph.mmd
+|       call_graph.txt
+|       code_schema.db
+|       create_sample_deck.py
+|       create_sample_financials.py
+|       create_template.py
+|       debug_deck.py
+|       deps.dot
+|       filelist.txt
+|       generate_visual.py
+|       graph.dot
+|       make_dep_graph.py
+|       map_dependencies.py
+|       module-deps.svg
+|       query_calls.py
+|       spring_view.py
+|       
++---assets
+|       brand.css
+|       handarrow.svg
+|       handline.svg
+|       logo.png
+|       print.css
+|       seasonal.css
+|       style.css
+|       upload.js
+|       
++---outputs
+|       current_project-investors.pptx
+|       
++---projectmanagement
+|       26.01.10 sprint.docx
+|       bdg2_import.csv
+|       structuredependency.png
+|       
++---projects
+|   \---current_project
+|       |   pipeline_complete.txt
+|       |   
+|       +---deck
+|       |       deck.md
+|       |       deck_summary.txt
+|       |       
+|       +---financial
+|       |   |   summary.json
+|       |   |   
+|       |   \---charts
+|       |           revenue.png
+|       |           
+|       +---insights
+|       |       key_insights.md
+|       |       
+|       +---memo
+|       |       market_analysis.md
+|       |       structure_overview.md
+|       |       
+|       +---outputs
+|       +---raw_docs
+|       |       Comment r nover les poutres apparentes.pdf
+|       |       Coordination contr leurs de gestion.docx
+|       |       financial_model.xlsx
+|       |       Marseille articles drogue.docx
+|       |       
+|       \---standardized
+|           \---docs
+|                   Coordination contr leurs de gestion.md
+|                   Marseille articles drogue.md
+|                   
++---templates
+|       Brand_Template.pptx
+|       Financial_Model_Template.xlsx
+|       Screenshot 2026-01-10 170459.png
+|       
+\---__pycache__
+        app.cpython-310.pyc
+        callbacks.cpython-310.pyc
+        layout.cpython-310.pyc
+        pdf_export.cpython-310.pyc
+        seasonal.cpython-310.pyc
+        

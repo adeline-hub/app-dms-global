@@ -1,0 +1,13 @@
+@media print {
+  .app-container {
+    padding: 30mm;
+  }
+
+  .seasonal-score {
+    opacity: 0.3;
+  }
+
+  .spring-output {
+    page-break-after: always;
+  }
+}
