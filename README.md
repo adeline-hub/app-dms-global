@@ -12,6 +12,8 @@ The system is designed as a *seasonal cycle*, where each phase corresponds to a 
 
 Idea : Greek myth of Persephon and how the underworld-descent / seasonal-renewal pattern shows up for three Near-Eastern goddesses; “The Descent of Inanna” (Sumerian, c. 2100 BCE) and the later Akkadian text “Ishtar’s Descent to the Netherworld.”
 
+![MISSION UNDER-WORLD](assets/MISSION%20UNDER-WORLD.png)
+
 Each project follows four phases:
 
 1. **Summer — Input**  
